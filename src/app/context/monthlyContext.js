@@ -31,7 +31,7 @@ function reducer(state, action) {
       if (state[month] !== undefined) {
         newState[month] = [...newState[month], action.payload];
       } else {
-        newState[month] = []; // newState[month].push(action.payload)
+        newState[month] = [];
 
         newState[month] = [...newState[month], action.payload];
       }
@@ -39,7 +39,6 @@ function reducer(state, action) {
       return newState;
     case "DELETE_PLAN":
       const newState1 = { ...state };
-      console.log(action);
       const temp=newState1[action.payload.monthInd].filter((ele,i)=>{
         if(action.payload.taskInd!==i){
           return ele;

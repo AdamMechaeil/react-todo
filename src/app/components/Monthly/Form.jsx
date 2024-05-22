@@ -30,7 +30,6 @@ export const Form = () => {
                     <br />
                     <label htmlFor="setDate">Set Date: </label> &nbsp;
                     <input type="date" min={new Date().toJSON().slice(0, 10)} name="setDate" id="" onChange={(e) => {
-                        // console.log(e.target.value);
                         const aux = e.target.value.split("-");
                         setFormData(prev => { return { ...prev, year: aux[0], month: aux[1], date: aux[2] } })
                     }} />

@@ -3,7 +3,6 @@ import React, { useContext, useEffect } from 'react'
 
 export const Today = () => {
   const {toDoArr,dispatch}=useContext(DailyContext);
-  console.log(toDoArr);
   return (
     <>
       <div className='card shadow p-3 my-3'>
