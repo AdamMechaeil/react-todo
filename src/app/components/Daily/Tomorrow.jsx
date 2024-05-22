@@ -38,7 +38,6 @@ export const Tomorrow = ({ toDOs, deleteHandler,moveToToday }) => {
                         })
                       }}>Delete</button>
                           <button className='btn btn-info ms-2' onClick={()=>{
-                        // moveToToday(i,"tomorrow")
                         dispatch({
                           type:"MOVE_TO_TODAY",
                           payload:{

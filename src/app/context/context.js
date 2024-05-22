@@ -86,7 +86,6 @@ function reducer(state, action) {
       case "MOVE_TO_TODAY":
         let newState2 = state;
         if (action.payload.comingFrom == "previous") {
-          // console.log("Hello");
           let today = state.today;
           let prev = state.previous;
           const task = prev[action.payload.index];
@@ -140,7 +139,6 @@ function reducer(state, action) {
         return newState3;
       case "TASK_COMPLETED":
         let newState4 = state;
-        // newState4.today[action.payload.index].completed=true;
         const today = state.today;
         today[action.payload.index].completed = true;
         newState4 = { ...newState4, today: today };

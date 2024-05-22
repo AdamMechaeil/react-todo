@@ -33,20 +33,6 @@ export const Form = () => {
                     completed:false
                 }
             })
-
-            // SetTODOs(prev => [...prev, {
-            //     ...data,
-            //     day: date.getDate(),
-            //     month: date.getMonth(),
-            //     year: date.getFullYear()
-            // }
-            // ])
-            // SetTODOs(prev => {
-            //     let curr = prev.tomorrow;
-            //     return {
-            //         ...prev, tomorrow: [...curr, ]
-            //     }
-            // })
         }
         ref.current.value = ""
     }
